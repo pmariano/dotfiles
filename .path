@@ -1,0 +1,1 @@
+export PATH="/usr/local/bin:$PATH:$(brew --prefix coreutils)/libexec/gnubin"
