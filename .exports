@@ -32,3 +32,6 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 # NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+# RVM
+source ~/.rvm/scripts/rvm
