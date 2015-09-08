@@ -28,3 +28,7 @@ export GREP_OPTIONS='--color=auto';
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export GOPATH=$HOME/golang
 export ANDROID_HOME=/usr/local/opt/android-sdk
+
+# NVM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
