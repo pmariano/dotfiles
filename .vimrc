@@ -40,6 +40,7 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 	" Treat .coffee
 	autocmd BufNewFile,BufRead *.coffee setfiletype coffee syntax=coffee
+	autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=4 expandtab
 endif
 
 " Enable file type detection
