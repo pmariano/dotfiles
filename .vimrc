@@ -14,6 +14,7 @@ set tabstop=4
 set shiftwidth=4
 
 syntax on
+filetype off
 " set auto ident
 set autoindent
 
@@ -26,21 +27,22 @@ set ignorecase
 " hide swap files
 let g:netrw_list_hide= '.*\.sw[po]$'
 set shortmess=atI
-
-autocmd FileType coffee setlocal expandtab
 set noswapfile
+
 
 " Automatic commands
 if has("autocmd")
-	" Enable file type detection
-	filetype plugin indent on
-
 	" Treat Gemfile and .ru files as ruby
 	autocmd BufNewFile,BufRead Gemfile,*.ru setf ruby
 	" Treat .json files as .js
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+	" Treat .coffee
+	autocmd BufNewFile,BufRead *.coffee setfiletype coffee syntax=coffee
 endif
+
+" Enable file type detection
+filetype plugin indent on
 
 command! E Explore
