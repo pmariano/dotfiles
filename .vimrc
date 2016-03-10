@@ -1,4 +1,7 @@
 " Use the Solarized Dark theme
+"projects
+execute pathogen#infect()
+
 set background=dark
 colorscheme solarized
 let g:solarized_termtrans=1
