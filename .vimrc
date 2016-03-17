@@ -32,6 +32,7 @@ let g:netrw_list_hide= '.*\.sw[po]$'
 set shortmess=atI
 set noswapfile
 
+set expandtab
 
 " Automatic commands
 if has("autocmd")
