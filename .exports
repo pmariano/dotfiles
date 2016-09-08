@@ -35,3 +35,6 @@ source $(brew --prefix nvm)/nvm.sh
 
 # RVM
 source ~/.rvm/scripts/rvm
+
+#Brew utils
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
